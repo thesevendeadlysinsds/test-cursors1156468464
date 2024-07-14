@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Zoom Cursor</title>
+    <style>
+    body {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.box {
+    width: 150px;
+    height: 100px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #3498db;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.2); /* Adjust the scale factor as needed */
+    background-color: #3498db;
+    color: #fff;
+}
+
+.default { cursor: default; }
+.help { cursor: help; }
+.pointer { cursor: pointer; }
+.progress { cursor: progress; }
+.wait { cursor: wait; }
+.crosshair { cursor: crosshair; }
+.text { cursor: text; }
+.move { cursor: move; }
+.no-drop { cursor: no-drop; }
+    </style>
+</head>
+<body>
+    <div class="box default">Default</div>
+    <div class="box help">Help</div>
+    <div class="box pointer">Pointer</div>
+    <div class="box progress">Progress</div>
+    <div class="box wait">Wait</div>
+    <div class="box crosshair">Crosshair</div>
+    <div class="box text">Text</div>
+    <div class="box move">Move</div>
+    <div class="box no-drop">No-drop</div>
+</body>
+</html>
